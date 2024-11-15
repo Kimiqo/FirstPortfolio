@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.introduction {
+    text-align: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.profileSection {
+    width: 45%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    width: 150%;
+    height: 150%;
+    background-image: url('./assets/profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: -20px;
+    border-radius: 5%;
+}
+
+.profileDesc {
+    text-align: left;
+    margin-left: 1%;
+}
+
+.profileDesc h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profileDesc p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profileIcons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.profileDesc>div .icons {
+    width: 25px;
+    height: 25px;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+main>h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.textContainer {
+    padding: 15px;
+}
+
+.project-title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.project-description {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+footer {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-left: 15px;
+    margin-top: auto;
+}
+
+.contact-section>h3{
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .contact-section{
+    flex: 2;
+    margin-left: 5%;
+}
+
+footer .footer-img{
+    flex: 1;
+    background-image: url('./assets/profile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 95%;
+}
+
+footer .footer-contact-icons {
+    height: 3%;
+    width: 3%;
+}
+
+footer .footer-icons {
+    margin-top: 1%;
+}
+
+footer .footer-icon-info {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .profileSection {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .project-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
